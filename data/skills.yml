@@ -1,0 +1,11 @@
+- name: "TypeScript"
+  category: "Language"
+  level: 5
+
+- name: "React"
+  category: "Framework"
+  level: 4
+
+- name: "Node.js"
+  category: "Runtime"
+  level: 4
