@@ -1,5 +1,5 @@
-const defaultQuery = `# nacal の個人情報 API です。
-# 下の ▶ ボタンを押すと、プロフィール情報を取得できます。
+const defaultQuery = `# Hello, World! This is nacalapi — a personal API by nacal.
+# Getting started: just press ▶ to run your first query.
 
 {
   profile {
