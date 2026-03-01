@@ -3,6 +3,7 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { createYoga } from "graphql-yoga";
 import { schema } from "./schema.js";
+import { graphiqlHtml } from "./graphiql.js";
 import type { GraphQLContext } from "./types.js";
 
 const apiKeys = new Set(
@@ -11,7 +12,7 @@ const apiKeys = new Set(
 
 const yoga = createYoga<{ request: Request }, GraphQLContext>({
   schema,
-  graphiql: true,
+  graphiql: false,
   context: ({ request }) => {
     const auth = request.headers.get("authorization");
     const token = auth?.startsWith("Bearer ") ? auth.slice(7) : null;
@@ -23,7 +24,11 @@ const app = new Hono();
 
 app.use("/graphql", cors());
 
-app.on(["GET", "POST"], "/graphql", async (c) => {
+app.get("/graphql", (c) => {
+  return c.html(graphiqlHtml);
+});
+
+app.post("/graphql", async (c) => {
   const response = await yoga.handle(c.req.raw);
   return response;
 });
