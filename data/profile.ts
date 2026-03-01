@@ -8,6 +8,6 @@ export const profile: Profile = {
     { label: "GitHub", url: "https://github.com/nacal" },
     { label: "Website", url: "https://nacal.io" },
   ],
-  real_name: "Your Real Name",
+  real_name: "Hikaru Nakata",
   email: "nacal.dev@gmail.com",
 };

@@ -13,7 +13,7 @@ const typeDefs = /* GraphQL */ `
     avatarUrl: String!
     links: [Link!]!
     realName: String
-    email: String
+    email: String!
   }
 
   type Query {

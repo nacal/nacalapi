@@ -20,9 +20,6 @@ export const resolvers = {
       requireAuth(context);
       return parent.real_name;
     },
-    email: (parent: Profile, _args: unknown, context: GraphQLContext) => {
-      requireAuth(context);
-      return parent.email;
-    },
+    email: (parent: Profile) => parent.email,
   },
 };
