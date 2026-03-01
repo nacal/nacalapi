@@ -1,7 +1,6 @@
 import { GraphQLError } from "graphql";
-import { profile } from "../data/profile.ts";
-import type { Profile } from "../data/types.ts";
-import type { GraphQLContext } from "./types.js";
+import { profile } from "../data/profile.js";
+import type { Profile, GraphQLContext } from "./types.js";
 
 function requireAuth(context: GraphQLContext): void {
   if (!context.authenticated) {

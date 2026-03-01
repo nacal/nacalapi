@@ -1,3 +1,0 @@
-[submodule "data"]
-	path = data
-	url = ssh://git@github.com/nacal/nacalapi-data.git
