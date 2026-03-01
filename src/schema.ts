@@ -14,34 +14,8 @@ const typeDefs = /* GraphQL */ `
     links: [Link!]!
   }
 
-  type WorkExperience {
-    company: String!
-    role: String!
-    description: String!
-    startDate: String!
-    endDate: String
-    url: String
-  }
-
-  type Skill {
-    name: String!
-    category: String!
-    level: Int!
-  }
-
-  type Project {
-    name: String!
-    description: String!
-    url: String
-    technologies: [String!]!
-    imageUrl: String
-  }
-
   type Query {
     profile: Profile!
-    workExperiences: [WorkExperience!]!
-    skills: [Skill!]!
-    projects: [Project!]!
   }
 `;
 
