@@ -8,4 +8,10 @@ export interface Profile {
   bio: string;
   avatar_url: string;
   links: Link[];
+  real_name: string;
+  email: string;
+}
+
+export interface GraphQLContext {
+  authenticated: boolean;
 }

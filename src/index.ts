@@ -3,8 +3,21 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { createYoga } from "graphql-yoga";
 import { schema } from "./schema.js";
+import type { GraphQLContext } from "./types.js";
 
-const yoga = createYoga({ schema, graphiql: true });
+const apiKeys = new Set(
+  (process.env.API_KEYS ?? "").split(",").filter(Boolean)
+);
+
+const yoga = createYoga<{ request: Request }, GraphQLContext>({
+  schema,
+  graphiql: true,
+  context: ({ request }) => {
+    const auth = request.headers.get("authorization");
+    const token = auth?.startsWith("Bearer ") ? auth.slice(7) : null;
+    return { authenticated: token !== null && apiKeys.has(token) };
+  },
+});
 
 const app = new Hono();
 

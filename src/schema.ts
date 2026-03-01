@@ -12,6 +12,8 @@ const typeDefs = /* GraphQL */ `
     bio: String!
     avatarUrl: String!
     links: [Link!]!
+    realName: String
+    email: String
   }
 
   type Query {

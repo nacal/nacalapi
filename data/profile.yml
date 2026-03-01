@@ -6,3 +6,7 @@ links:
     url: "https://github.com/nacal"
   - label: "Website"
     url: "https://nacal.io"
+
+# Private fields (visible only with valid API key)
+real_name: "Your Real Name"
+email: "nacal.dev@gmail.com"

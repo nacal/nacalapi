@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import yaml from "js-yaml";
-import type { Profile } from "./types.js";
+import type { Profile, GraphQLContext } from "./types.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataDir = resolve(__dirname, "../data");
@@ -18,5 +18,9 @@ export const resolvers = {
   },
   Profile: {
     avatarUrl: (parent: Profile) => parent.avatar_url,
+    realName: (parent: Profile, _args: unknown, context: GraphQLContext) =>
+      context.authenticated ? parent.real_name : null,
+    email: (parent: Profile, _args: unknown, context: GraphQLContext) =>
+      context.authenticated ? parent.email : null,
   },
 };
