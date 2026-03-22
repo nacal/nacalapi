@@ -10,4 +10,10 @@ export const profile: Profile = {
   ],
   real_name: "Hikaru Nakata",
   email: "nacal.dev@gmail.com",
+  location: {
+    city: "Tokyo",
+    country: "Japan",
+    hometown: "Osaka",
+    timezone: "Asia/Tokyo",
+  },
 };
