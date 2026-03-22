@@ -42,3 +42,8 @@ export interface Education {
   end_date: string;
 }
 
+export interface Interest {
+  category: string;
+  items: string[];
+}
+
