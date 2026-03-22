@@ -23,7 +23,7 @@ app.post("/graphql", async (c) => {
 });
 
 app.get("/", (c) => {
-  return c.json({ status: "ok", graphql: "/graphql" });
+  return c.redirect("/graphql");
 });
 
 export default app;
