@@ -1,6 +1,7 @@
 import { profile } from "../data/profile.js";
 import { careers } from "../data/careers.js";
 import { education } from "../data/education.js";
+import { interests } from "../data/interests.js";
 import type { Profile, Career, Role, Education } from "./types.js";
 
 export const resolvers = {
@@ -8,6 +9,7 @@ export const resolvers = {
     profile: () => profile,
     careers: () => careers,
     education: () => education,
+    interests: () => interests,
   },
   Profile: {
     avatarUrl: (parent: Profile) => parent.avatar_url,

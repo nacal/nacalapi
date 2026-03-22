@@ -46,10 +46,16 @@ const typeDefs = /* GraphQL */ `
     endDate: String!
   }
 
+  type Interest {
+    category: String!
+    items: [String!]!
+  }
+
   type Query {
     profile: Profile!
     careers: [Career!]!
     education: [Education!]!
+    interests: [Interest!]!
   }
 `;
 
