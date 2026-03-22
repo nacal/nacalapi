@@ -12,6 +12,3 @@ export interface Profile {
   email: string;
 }
 
-export interface GraphQLContext {
-  authenticated: boolean;
-}

@@ -12,7 +12,7 @@ const typeDefs = /* GraphQL */ `
     bio: String!
     avatarUrl: String!
     links: [Link!]!
-    realName: String
+    realName: String!
     email: String!
   }
 
