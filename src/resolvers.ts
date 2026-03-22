@@ -1,8 +1,8 @@
-import { profile } from "../data/profile.js";
 import { careers } from "../data/careers.js";
 import { education } from "../data/education.js";
 import { interests } from "../data/interests.js";
-import type { Profile, Career, Role, Education } from "./types.js";
+import { profile } from "../data/profile.js";
+import type { Career, Education, Profile, Role } from "./types.js";
 
 export const resolvers = {
   Query: {

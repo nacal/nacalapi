@@ -1,8 +1,8 @@
+import { createYoga } from "graphql-yoga";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-import { createYoga } from "graphql-yoga";
-import { schema } from "./schema.js";
 import { graphiqlHtml } from "./graphiql.js";
+import { schema } from "./schema.js";
 
 const yoga = createYoga({
   schema,
