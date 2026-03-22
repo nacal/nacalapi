@@ -7,9 +7,11 @@ on:
   pull_request:
     branches:
       - main
+    types: [opened, synchronize, reopened, closed]
 
 jobs:
   deploy:
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     permissions:
       contents: read
