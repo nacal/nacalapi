@@ -29,7 +29,6 @@ const typeDefs = /* GraphQL */ `
     title: String!
     startDate: String!
     endDate: String
-    description: String!
   }
 
   type Career {
