@@ -14,10 +14,42 @@ const typeDefs = /* GraphQL */ `
     links: [Link!]!
     realName: String!
     email: String!
+    location: Location!
+  }
+
+  type Location {
+    city: String!
+    country: String!
+    hometown: String!
+    timezone: String!
+  }
+
+  type Role {
+    department: String!
+    title: String!
+    startDate: String!
+    endDate: String
+  }
+
+  type Career {
+    company: String!
+    employmentType: String!
+    startDate: String!
+    endDate: String
+    roles: [Role!]!
+  }
+
+  type Education {
+    school: String!
+    faculty: String!
+    startDate: String!
+    endDate: String!
   }
 
   type Query {
     profile: Profile!
+    careers: [Career!]!
+    education: [Education!]!
   }
 `;
 
