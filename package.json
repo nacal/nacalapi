@@ -1,23 +1,23 @@
 {
-	"name": "nacalapi",
-	"version": "0.1.0",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"dev": "wrangler dev",
-		"deploy": "wrangler deploy",
-		"check": "tsc --noEmit && biome check .",
-		"format": "biome check --write ."
-	},
-	"dependencies": {
-		"graphql": "^16.10.0",
-		"graphql-yoga": "^5.10.0",
-		"hono": "^4.7.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.4.8",
-		"@cloudflare/workers-types": "^4.20250214.0",
-		"typescript": "^5.7.0",
-		"wrangler": "^4.0.0"
-	}
+  "name": "nacalapi",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit && biome check .",
+    "format": "biome check --write ."
+  },
+  "dependencies": {
+    "graphql": "^16.10.0",
+    "graphql-yoga": "^5.10.0",
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.0.0"
+  }
 }
