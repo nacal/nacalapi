@@ -10,7 +10,7 @@
     "format": "biome check --write ."
   },
   "dependencies": {
-    "graphql": "^16.10.0",
+    "graphql": "^16.13.1",
     "graphql-yoga": "^5.10.0",
     "hono": "^4.7.0"
   },
