@@ -17,6 +17,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.4.8",
     "@cloudflare/workers-types": "^4.20260317.1",
+    "@nacal-tools/biome-config": "^0.2.2",
     "typescript": "^5.7.0",
     "wrangler": "^4.76.0"
   }

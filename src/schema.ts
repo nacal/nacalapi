@@ -1,5 +1,5 @@
-import { createSchema } from "graphql-yoga";
-import { resolvers } from "./resolvers.js";
+import { createSchema } from "graphql-yoga"
+import { resolvers } from "./resolvers.js"
 
 const typeDefs = /* GraphQL */ `
   type Link {
@@ -57,6 +57,6 @@ const typeDefs = /* GraphQL */ `
     education: [Education!]!
     interests: [Interest!]!
   }
-`;
+`
 
-export const schema = createSchema({ typeDefs, resolvers });
+export const schema = createSchema({ typeDefs, resolvers })
