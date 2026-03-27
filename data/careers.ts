@@ -1,4 +1,4 @@
-import type { Career } from "../src/types.js";
+import type { Career } from "../src/types.js"
 
 export const careers: Career[] = [
   {
@@ -11,15 +11,15 @@ export const careers: Career[] = [
         department: "ロリポップ・ムームードメイン事業部 for Gamersチーム",
         title: "シニアエンジニア",
         start_date: "2024-06",
-        end_date: null,
+        end_date: null
       },
       {
         department: "minne事業部 プロダクトチーム",
         title: "Webアプリケーションエンジニア",
         start_date: "2022-08",
-        end_date: "2024-05",
-      },
-    ],
+        end_date: "2024-05"
+      }
+    ]
   },
   {
     company: "株式会社RED FRASCO",
@@ -31,9 +31,9 @@ export const careers: Career[] = [
         department: "Webフロントエンドチーム",
         title: "フロントエンドエンジニア",
         start_date: "2023-07",
-        end_date: "2024-09",
-      },
-    ],
+        end_date: "2024-09"
+      }
+    ]
   },
   {
     company: "GMOペパボ株式会社",
@@ -45,8 +45,8 @@ export const careers: Career[] = [
         department: "SUZURI事業部",
         title: "Webフロントエンドエンジニア",
         start_date: "2021-08",
-        end_date: "2022-03",
-      },
-    ],
-  },
-];
+        end_date: "2022-03"
+      }
+    ]
+  }
+]
