@@ -11,7 +11,7 @@ const defaultQuery = `# Hello, World! This is nacalapi — a personal API by nac
       url
     }
   }
-}`;
+}`
 
 export const graphiqlHtml = `<!DOCTYPE html>
 <html lang="ja">
@@ -40,4 +40,4 @@ export const graphiqlHtml = `<!DOCTYPE html>
     );
   </script>
 </body>
-</html>`;
+</html>`
