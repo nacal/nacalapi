@@ -3,5 +3,17 @@
   "extends": ["@nacal-tools/biome-config/biome.json"],
   "files": {
     "includes": ["src/**", "data/**", "*.json"]
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["data/**"],
+      "linter": {
+        "rules": {
+          "security": {
+            "noSecrets": "off"
+          }
+        }
+      }
+    }
+  ]
 }

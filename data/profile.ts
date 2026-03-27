@@ -1,4 +1,4 @@
-import type { Profile } from "../src/types.js";
+import type { Profile } from "../src/types.js"
 
 export const profile: Profile = {
   name: "nacal",
@@ -6,7 +6,7 @@ export const profile: Profile = {
   avatar_url: "https://nacal.io/profile.png",
   links: [
     { label: "GitHub", url: "https://github.com/nacal" },
-    { label: "Website", url: "https://nacal.io" },
+    { label: "Website", url: "https://nacal.io" }
   ],
   real_name: "Hikaru Nakata",
   email: "nacal.dev@gmail.com",
@@ -14,6 +14,6 @@ export const profile: Profile = {
     city: "Tokyo",
     country: "Japan",
     hometown: "Osaka",
-    timezone: "Asia/Tokyo",
-  },
-};
+    timezone: "Asia/Tokyo"
+  }
+}
