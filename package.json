@@ -18,7 +18,7 @@
     "@biomejs/biome": "^2.4.9",
     "@cloudflare/workers-types": "^4.20260331.1",
     "@nacal-tools/biome-config": "^0.2.2",
-    "typescript": "^5.7.0",
+    "typescript": "^6.0.2",
     "wrangler": "^4.79.0"
   }
 }
